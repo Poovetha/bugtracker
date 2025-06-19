@@ -1,0 +1,11 @@
+# Node modules
+frontend/node_modules/
+# IntelliJ or VSCode folders
+.idea/
+.vscode/
+# OS generated files
+.DS_Store
+# Logs
+*.log
+# Maven target folder
+backend/target/

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> Bug Tracker System</title>
+
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <div class="container">
+    <h1><i class="fas fa-bug"></i> Bug Tracker System</h1>
+
+    <!-- Form to add bugs -->
+    <form id="bugForm">
+      <input type="text" id="title" placeholder="Bug Title" required />
+      <textarea id="description" placeholder="Bug Description" required></textarea>
+      <select id="severity">
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+      <button type="submit">📝 Add Bug</button>
+    </form>
+
+    <!-- Bug List -->
+    <h2>📋 Reported Bugs</h2>
+    <table id="bugTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Severity</th>
+          <th>Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Bug rows will be added here dynamically -->
+      </tbody>
+    </table>
+
+    <!-- Footer -->
+    <footer>
+      Built with ☕ by <strong>Poovitha</strong> – 2025 Ready 💼
+    </footer>
+  </div>
+
+  <!-- Link JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
